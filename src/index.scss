@@ -1,0 +1,32 @@
+$darkBackground: #282c34;
+$lightBackground: #fff;
+$darkColor: #fff;
+$lightColor: #222;
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: $lightBackground; /* Default light background */
+  color: $lightColor; /* Default light text color */
+  transition: background-color 0.4s, color 0.4s; /* Smooth transition */
+}
+
+.card {
+  transition: transform 0.4s;
+}
+*{
+    transition: all 0.1s ease-in-out;
+}
+header div i{
+    cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* Apply styles for dark mode */
+[data-theme="dark"] {
+  background-color: $darkBackground; /* Dark background */
+  color: $darkColor; /* Dark text color */
+}

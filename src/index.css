@@ -1,0 +1,9 @@
+
+:root{
+    --bodydark :#222;
+    --color :#fff
+}
+[data-theme="dark"]{
+    color:var(--color);
+    background-color: var(--bodydark)
+}
