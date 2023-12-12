@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import logo from './images/logo.png'
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -25,7 +25,7 @@ function Header() {
 
   return (
     <header className="container-fluid sticky-top bg-primary  fw-bold  d-flex p-3 justify-content-between align-items-center shadow-sm">
-      <h5 className="text-light">Where in the world?</h5>
+       <h5 className="text-light">Country</h5>
       <div className="d-flex justify-content-center text-light align-items-center gap-1">
         <i onClick={toggleDarkMode} className={`fa-regular fa-${isDarkMode ? 'sun' : 'moon'}`}></i>
          {isDarkMode ? "Light mode" : "Dark mode"}
