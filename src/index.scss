@@ -13,11 +13,15 @@ body {
 .card {
   transition: transform 0.4s;
   position: relative;
+  overflow: hidden;
 }
 *{
-    transition: all 0.1s ease-in-out;
+  
     margin: 0;
     padding: 0;
+}
+.card div{
+  transition: all 0.5s ease-in-out;
 }
 header div i{
     cursor: pointer;
@@ -34,17 +38,17 @@ header div i{
   color: $darkColor; /* Dark text color */
 }
 .card:hover .falg_info{
-  display: block !important;
+  top: 0%;
+
 
 }
 
 .falg_info{
   position: absolute;
-  top: 0;
+  top: -100%;
   border-radius: 5px;
   padding: 3px;
   background-color: $darkBackground;
   color: #fff;
-  display: none;
   height: 100%;
 }
