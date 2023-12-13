@@ -1,4 +1,4 @@
-$darkBackground: #282c34;
+$darkBackground: #152A38;
 $lightBackground: #fff;
 $darkColor: #fff;
 $lightColor: #222;
@@ -12,9 +12,12 @@ body {
 
 .card {
   transition: transform 0.4s;
+  position: relative;
 }
 *{
     transition: all 0.1s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 header div i{
     cursor: pointer;
@@ -29,4 +32,19 @@ header div i{
 [data-theme="dark"] {
   background-color: $darkBackground; /* Dark background */
   color: $darkColor; /* Dark text color */
+}
+.card:hover .falg_info{
+  display: block !important;
+
+}
+
+.falg_info{
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: $darkBackground;
+  color: #fff;
+  display: none;
+  height: 100%;
 }

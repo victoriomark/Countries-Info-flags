@@ -1,7 +1,7 @@
 import React from "react";
 import NoData from "./NoData";
 function Cards({ Data }) {
-    console.log(Data)
+  console.log(Data);
   return (
     <>
       <div className="row mt-5 p-5 gap-2 justify-content-center align-items-center">
@@ -21,7 +21,7 @@ function Cards({ Data }) {
               },
               index
             ) => (
-              <div key={index} className="card p-1   col-lg-2">
+              <div key={index} className="card    col-lg-2">
                 <img src={flags.svg} className="img-card-top" alt="Flag" />
                 <div className="card-body">
                   <h5 className="card-title">{name.common}</h5>
@@ -37,6 +37,13 @@ function Cards({ Data }) {
                       {population}
                     </li>
                   </ul>
+                </div>
+                <div className="falg_info p-2 ">
+                  {flags.alt ? (
+                    <p className="text-secondary">{flags.alt}</p>
+                  ) : (
+                    <p>No Information this Flag</p>
+                  )}
                 </div>
               </div>
             )
